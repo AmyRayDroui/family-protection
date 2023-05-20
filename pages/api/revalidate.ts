@@ -10,7 +10,7 @@ export default async function handler(
     return res.status(401).json({ message: 'Invalid token' })
   }
   try {
-    await res.unstable_revalidate('/')
+    //await res.unstable_revalidate('/')
     //@ts-ignore
     await res.unstable_revalidate(req.query.path)
     console.debug('[revalidate] path:', req.query.path, 'success')

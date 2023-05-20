@@ -55,7 +55,7 @@ export default function Banner({ data }: HomePageType) {
           className="banner-img top-[540px] right-[343px] md:right-[200px] sm:hidden border-2 border-light rounded-lg"
         />
 
-        <style>{`
+        <style jsx>{`
           div.wrapper {
             margin-top: -95px;
             padding-top: 95px;
