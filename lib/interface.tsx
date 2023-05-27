@@ -23,6 +23,11 @@ export type Homepage = {
   contactusheading: string
   contactustitle: string
   contactustext: string
+  bannerimages: Array<{
+    url: string
+    customData: { className: string }
+    alt: string
+  }>
 }
 
 export type Common = {
@@ -84,6 +89,11 @@ query Homepage {
   homepage(locale: ${locale}) {
     title
     description
+    bannerimages {
+      url
+      alt
+      customData
+    }
     abouttitle
     whatwedocards {
       imagepath
