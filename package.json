@@ -8,6 +8,9 @@
     "lint": "next lint",
     "postinstall": "lefthook install || true"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "formik": "^2.2.9",
     "graphql": "^16.2.0",
