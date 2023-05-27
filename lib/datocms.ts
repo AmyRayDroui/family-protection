@@ -6,7 +6,7 @@ export function request({ query, variables, preview }: any) {
     : `https://graphql.datocms.com/`
   const client = new GraphQLClient(endpoint, {
     headers: {
-      authorization: `Bearer ${process.env.NEXT_DATOCMS_API_TOKEN}`,
+      authorization: `Bearer 546bb8c9414c59169eba9b07872863`,
     },
   })
 
